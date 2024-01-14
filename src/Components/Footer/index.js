@@ -41,8 +41,8 @@ const Footer = () => {
         setErrorMessage(""); // Clear any previous error message
       } else {
         // Show error message
-        setErrorMessage("Error submitting subscription. Please try again");
-        setSuccessMessage(""); // Clear any previous success message
+        setErrorMessage("Error submitting Subscription,please try again");
+        setSuccessMessage(""); 
       }
     } catch (error) {
       console.error("Error submitting subscription:", error);
@@ -55,11 +55,10 @@ const Footer = () => {
     setShowSubscribe(false);
   };
 
-  // Rest of the component...
 
   return (
     <Container flex="column" color="black" textColor="white" align="center" height="200px">
-      {/* ... (rest of the component) */}
+      
 
       <Container flex="column" justify="space-between" height="100%">
         {/* Toggled input for subscription */}
